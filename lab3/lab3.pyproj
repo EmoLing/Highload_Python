@@ -1,0 +1,62 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6f202050-0c5d-48b2-aac8-ba6d3cf07560</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>lab3</Name>
+    <RootNamespace>lab3</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="work3\" />
+    <Folder Include="work2\" />
+    <Folder Include="work1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="work1\morse.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="work1\morse_test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="work2\one_hot_encoder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="work2\pytest_one_hot_encoder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="work2\unittest_one_hot_encoder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="work3\test_what_is_year_now.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="work3\what_is_year_now.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

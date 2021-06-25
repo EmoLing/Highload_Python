@@ -14,6 +14,7 @@ def step1():
         else:
             return step2_non_umbrella()
 
+
 def step2_umbrella():
     print(
         'Утка-маляр попала под дождик. '
@@ -30,9 +31,10 @@ def step2_umbrella():
         else:
             return step3_rain_with_umbrella()
 
+
 def step2_non_umbrella():
-    print('Начался дождь! Утку смыло в океан '
-    )
+    print('Начался дождь! Утку смыло в океан ')
+
 
 def step3_umbrella():
     print(
@@ -50,9 +52,10 @@ def step3_umbrella():
         else:
             return step4_lake()
 
+
 def step3_rain_with_umbrella():
-    print('У утки переохлаждение - помянем '
-    )
+    print('У утки переохлаждение - помянем ')
+
 
 def step4_park():
     print(
@@ -70,20 +73,24 @@ def step4_park():
         else:
             return step5_home()
 
+
 def step4_lake():
     print(
         'Утка-маляр уплыла в небытье'
     )
+
 
 def step5_walking():
     print(
         'Утка-маляр гуляла долго...больше ее никто не видел'
     )
 
+
 def step5_home():
     print(
         'Утка-маляр пришла домой и теперь греет лапки'
     )
+
 
 if __name__ == '__main__':
     step1()

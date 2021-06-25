@@ -1,0 +1,42 @@
+PS C:\Users\temch\OneDrive\Desktop\Питон\Labs\lab3\work1> python -m doctest -o NORMALIZE_WHITESPACE -v morse.py
+Trying:
+    decode('... --- ...')
+Expecting:
+    'SOS'
+ok
+Trying:
+    decode(".--. .. -. -.-. ....") # doctest: +ELLIPSIS
+Expecting:
+    'PINCH'
+ok
+Trying:
+    decode('------')
+Expecting:
+    Traceback (most recent call last):
+        ...
+    KeyError: '------'
+ok
+Trying:
+    encode('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode("PINCH") # doctest: +ELLIPSIS
+Expecting:
+    '.--. ... ....'
+ok
+Trying:
+    encode('z')
+Expecting:
+    Traceback (most recent call last):
+        ...
+    KeyError: 'z'
+ok
+1 items had no tests:
+    morse
+   3 tests in morse.decode
+   3 tests in morse.encode
+6 tests in 3 items.
+6 passed and 0 failed.
+Test passed.
